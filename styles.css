@@ -75,7 +75,7 @@ footer {
     background-color: #fff8ee;
     border-color: #f28c8c;
 }
-.login-form button {
+button {
     background-color: #f28c8c;
     color: white;
     font-weight: bold;
@@ -83,6 +83,38 @@ footer {
     border-color: #f28c8c;
     padding: 8px 14px 8px 14px;
 }
-.login-form button:hover {
+button:hover {
     cursor: pointer;
+}
+.avaliable-flavors-container {
+    display: inline-block;
+    width: 81vw;
+
+    
+
+}
+.avaliable-flavors-container img {
+    border-radius: 15px;
+    width: 200px;
+}
+.avaliable-flavors-container div {
+    display: inline-block;
+    box-shadow: 5px 5px 10px lightgrey;
+
+    width: 280px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+}
+.section-season {
+    width: 81vw;
+    text-align: center;
+}
+.section-season select{
+    background-color: #fff8ee;
+    border-radius: 10px;
+    padding: 5px 5px;
+    border-color: #f28c8c;
 }
