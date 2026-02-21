@@ -28,11 +28,21 @@ div nav ul a {
   color: brown;
   background-color: #f28c8c;
   font-weight: bold;
-  margin: 10px 10px;          
+  margin: 0px 10px;          
   border-radius: 12px;
   padding: 8px 12px;         
   display: inline-block;   
 }
+
+div nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+.divider {
+  color: black;
+}
+
 main {
     margin: 40px auto 0;
     display: flex;
@@ -81,26 +91,24 @@ button {
     font-weight: bold;
     border-radius: 12px;
     border-color: #f28c8c;
-    padding: 8px 14px 8px 14px;
+    border: none;        
+    box-shadow: none;   
+    padding: 8px 14px;
 }
+
 button:hover {
     cursor: pointer;
 }
+
 .avaliable-flavors-container {
     display: inline-block;
     width: 81vw;
-
-    
-
+    text-align: center;
 }
-.avaliable-flavors-container img {
-    border-radius: 15px;
-    width: 200px;
-}
+
 .avaliable-flavors-container div {
     display: inline-block;
     box-shadow: 5px 5px 10px lightgrey;
-
     width: 280px;
     background-color: #ffffff;
     border-radius: 20px;
@@ -108,6 +116,12 @@ button:hover {
     margin: 15px;
     text-align: center;
 }
+
+.avaliable-flavors-container img {
+    border-radius: 15px;
+    width: 200px;
+}
+
 .section-season {
     width: 81vw;
     text-align: center;
@@ -117,4 +131,97 @@ button:hover {
     border-radius: 10px;
     padding: 5px 5px;
     border-color: #f28c8c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #222;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.order-form {
+  max-width: 1100px;
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+}
+
+.banner {
+  display: block;
+  margin: 10px auto 18px auto;
+  max-width: 520px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+h2 {
+  margin: 18px 0 10px;
+  font-size: 22px;
+}
+
+.subheading {
+  margin: 0 0 10px;
+  font-weight: 700;
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  padding: 12px 22px;
+  border-radius: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.btn.secondary,
+.btn.primary {
+  background: #f28c8c;
+  color: #ffffff;
+}
+
+.order-summary-main {
+  max-width: 1100px;
+  margin: 40px auto 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.order-summary-table {
+  border: 1px solid black;
+  border-collapse: collapse;   
+  margin: 0 auto;              
+  background-color: #fff8ee;
+}
+
+.order-summary-table th,
+.order-summary-table td {
+  border: 1px solid black;
+  padding: 10px 15px;          
+  text-align: left;
+}
+
+.btn {
+  background-color: #f28c8c;
+  color: white;
+  font-weight: bold;
+  border-radius: 12px;
+  padding: 8px 14px;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px 8px;
+  cursor: pointer;
 }
